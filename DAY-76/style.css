@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 98.91vw;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+  width: 100%;
+  overflow: hidden;
+  /* min-height: 100vh; */
+  background-color: #1b1b1b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 1.2rem 2.4rem;
+  background-color: #fff;
+  position: fixed;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #1b1b1b;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2.4rem;
+  font-size: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-weight: 700;
+}
+
+.main-container {
+  width: 80%;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+  flex-direction: column;
+  padding-bottom: 16rem;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  color: #f7d71e;
+}
+
+.description {
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.image {
+  width: 52rem;
+  margin-top: 2.4rem;
+  border-radius: 6rem;
+  -webkit-border-radius: 6rem;
+  -moz-border-radius: 6rem;
+  -ms-border-radius: 6rem;
+  -o-border-radius: 6rem;
+  border: 2rem solid #f7d71e;
+}
+
+.top-button {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 1.6rem;
+  background-color: #f7d71e;
+  /* border: 2px solid #f7d71e; */
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.top-button i {
+  color: #1b1b1b;
+}
+
+.hide {
+  display: none;
+}
+
+/* Scroll Indicator CSS */
+.scroll-indicator {
+  width: 100%;
+  height: 3px;
+  background: var(--grey);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 9999;
+  /* visibility: hidden; */
+}
+
+.progress {
+  width: 80%;
+  height: 5px;
+  background-color: crimson;
+  /* border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem; */
+}
+
+.newsletter {
+  /*width: 30rem;
+  */
+  padding: 1.6rem 3.2rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dashed #f7d71e;
+  position: fixed;
+  bottom: 5rem;
+  left: 0rem;
+  background-color: #1b1b1b;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.close {
+  width: 15px;
+  height: 2px;
+  background-color: #f7d71e;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform-origin: center;
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+}
+
+.close::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #f7d71e;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform-origin: center;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+.news-heading {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.news-description {
+  font-size: 1.2rem;
+}
+
+.news-input {
+  padding: 0.3rem 0.6rem;
+  font-size: 1.8rem;
+  margin: 0.6rem 0;
+  margin-top: 1.6rem;
+  border: none;
+  outline: none;
+}
+
+.news-button {
+  padding: 0.6rem 1.2rem;
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  background-color: #1b1b1b;
+  color: #f7d71e;
+  border: none;
+  border: 2px solid #f7d71e;
+  outline: none;
+}
