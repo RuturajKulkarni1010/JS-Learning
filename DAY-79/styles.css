@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1b1b1b;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Start here */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 40rem;
+  background-color: #f7d71e;
+  padding: 2.4rem;
+  color: #1b1b1b;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+form {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+
+form > * {
+  padding-bottom: 1rem;
+}
+
+form input,
+.btn {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.btn {
+  background-color: #1b1b1b;
+  color: #f7d71e;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 2.4rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  font-size: 1.8rem;
+}
+
+.result {
+  border: 0px solid #1b1b1b;
+  padding: 1rem;
+  color: #fff;
+}
+
+.reset {
+  padding: 1rem;
+  margin: 5px 0;
+  display: none;
+  cursor: pointer;
+}
