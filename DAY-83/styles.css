@@ -1,0 +1,195 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 1.2rem 2.4rem;
+  position: absolute;
+  top: 10rem;
+  font-weight: 700;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.clock {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 6.5rem;
+  width: 0.3rem;
+  transform-origin: bottom center;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+.needle.hour-hand {
+  transform: translate(-50%, -100%) rotate(0deg);
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+  -moz-transform: translate(-50%, -100%) rotate(0deg);
+  -ms-transform: translate(-50%, -100%) rotate(0deg);
+  -o-transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute-hand {
+  transform: translate(-50%, -100%) rotate(0deg);
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+  -moz-transform: translate(-50%, -100%) rotate(0deg);
+  -ms-transform: translate(-50%, -100%) rotate(0deg);
+  -o-transform: translate(-50%, -100%) rotate(0deg);
+  height: 10rem;
+}
+
+.needle.second-hand {
+  transform: translate(-50%, -100%) rotate(0deg);
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+  -moz-transform: translate(-50%, -100%) rotate(0deg);
+  -ms-transform: translate(-50%, -100%) rotate(0deg);
+  -o-transform: translate(-50%, -100%) rotate(0deg);
+  height: 10rem;
+  background-color: #e74c3c;
+}
+
+.center-point {
+  background-color: #e74c3c;
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.center-point::before {
+  content: "";
+  background-color: var(--primary-color);
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.time {
+  font-size: 6.2rem;
+}
+
+.date {
+  color: #aaa;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  /* width: 1.8rem; */
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.8rem;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2rem;
+}
