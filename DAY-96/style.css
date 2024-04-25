@@ -41,7 +41,7 @@ body {
   opacity: 0.5;
   text-align: center;
   letter-spacing: 1px;
-  text-shadow: 0.1rem 0.3rem 0.1rem rgba(0, 0, 0, 1);
+  text-shadow: 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 
 #form {
